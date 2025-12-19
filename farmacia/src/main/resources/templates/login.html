@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Administrativo</title>
+</head>
+<body>
+
+<div th:replace="fragments/header :: *"></div>
+
+<div style="max-width:350px; margin:40px auto; padding:20px; border:1px solid #ccc; border-radius:8px;">
+    <h2 style="text-align:center;">Login Administrativo</h2>
+
+    <form action="/admin" method="post">
+        <label>Email:</label>
+        <input type="email" name="email" required style="width:100%; padding:10px; margin-top:5px;">
+
+        <label style="margin-top:15px;">Senha:</label>
+        <input type="password" name="senha" required style="width:100%; padding:10px; margin-top:5px;">
+
+        <button type="submit" style="width:100%; margin-top:20px; padding:10px; background:#0C8548; color:white; font-size:16px; border:none; border-radius:5px; cursor:pointer;">
+            Entrar
+        </button>
+    </form>
+</div>
+
+<div th:replace="fragments/footer :: *"></div>
+
+</body>
+</html>
